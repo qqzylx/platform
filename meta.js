@@ -31,7 +31,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
@@ -39,6 +39,27 @@ module.exports = {
       required: true,
       message: 'Project name',
     },
+      chineseName: {
+          when: 'isNotTest',
+          type: 'string',
+          required: true,
+          message: '平台中文名',
+          default: 'App运营平台'
+      },
+      version: {
+          when: 'isNotTest',
+          type: 'string',
+          required: false,
+          message: 'Project version',
+          default: 'V1.0',
+      },
+      devIp: {
+          when: 'isNotTest',
+          type: 'string',
+          required: false,
+          message: 'dev machine ip for test server',
+          default: '192.168.1.40',
+      },
     description: {
       when: 'isNotTest',
       type: 'string',
