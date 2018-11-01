@@ -20,9 +20,9 @@ let router = new Router({
             children: [
                 {
                     path: '/dashboard',
-                    component: resolve => require(['../components/page/Dashboard.vue'], resolve),
+                    component: resolve => require(['../components/page/home/Dashboard.vue'], resolve),
                     meta: {title: '系统首页'}
-                }
+                },
             ]
         },
         {

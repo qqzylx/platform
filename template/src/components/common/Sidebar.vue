@@ -78,7 +78,9 @@
                 }
             });
             try {
-                this.items = this.getMenu();
+              // TODO: use below line to do permission control
+              // this.items = this.getMenu();
+              this.items = fullMenu;
             } catch (e) {
                 // ignore, if exception catch, use default items to ensure page show
                 console.log("build sidebar items error: ", e);
