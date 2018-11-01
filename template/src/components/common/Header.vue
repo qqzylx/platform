@@ -4,15 +4,15 @@
         <div class="collapse-btn" @click="collapseChage">
             <img class="logo-img" src="static/img/logo.png"/>
             <span id="platform">白药大健康 - {{ chineseName }}</span>
-            <span id="pharmacy-name">{{pharmacyName}}</span>
+            <span id="pharmacy-name">\{{pharmacyName}}</span>
         </div>
         <div class="header-right">
             <div id="right-top">
-                <div class="right-item">{{dateStr}}</div>
-                <div class="right-item margin-left">{{dayStr}}</div>
+                <div class="right-item">\{{dateStr}}</div>
+                <div class="right-item margin-left">\{{dayStr}}</div>
             </div>
             <div id="right-bottom">
-                <div class="right-item">{{welcome}}</div>
+                <div class="right-item">\{{welcome}}</div>
                 <div class="right-item margin-left pointer" @click="handleModifyPassword">修改密码</div>
                 <div class="right-item margin-left pointer" @click="handleLogout">安全退出</div>
             </div>

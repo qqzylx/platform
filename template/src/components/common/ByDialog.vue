@@ -2,13 +2,13 @@
     <!-- 弹出框 -->
     <el-dialog class="box" :title="title" :visible="dialogVisible" :width="width" @close="closeClick">
         <template v-if="!$slots.body">
-            <div class="delete-content">{{content}}</div>
-            <div v-if="subContent" class="delete-sub">{{subContent}}</div>
+            <div class="delete-content">\{{content}}</div>
+            <div v-if="subContent" class="delete-sub">\{{subContent}}</div>
         </template>
         <slot v-if="$slots.body" name="body"></slot>
         <span slot="footer" class="dialog-footer">
-                <el-button size="small" @click="cancelClick">{{cancelStr}}</el-button>
-                <el-button size="small" class="dialog-ok-btn" type="primary" @click="okClick">{{okStr}}</el-button>
+                <el-button size="small" @click="cancelClick">\{{cancelStr}}</el-button>
+                <el-button size="small" class="dialog-ok-btn" type="primary" @click="okClick">\{{okStr}}</el-button>
             </span>
     </el-dialog>
 </template>
