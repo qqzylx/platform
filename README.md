@@ -1,4 +1,4 @@
-# vue-template-platform
+# platform
 
 ## Usage
 
@@ -6,7 +6,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init qqzylx/vue-template-platform my-project
+$ vue init qqzylx/platform my-project
 $ cd my-project
 $ npm install
 $ npm run dev
