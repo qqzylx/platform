@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'App'
-}
-</script>
-
 <style>
   @import "../static/css/main.css";
   @import "../static/css/color-blue.css";     /*蓝色主题*/

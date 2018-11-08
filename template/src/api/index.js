@@ -40,7 +40,7 @@ Axios.interceptors.request.use(
             //  饿了么的消息弹窗组件,类似toast
             showClose: true,
             message: error,
-            type: "error.data.error.message"
+            type: "error"
         });
         return Promise.reject(error.data.error.message);
     }
